@@ -1,0 +1,32 @@
+{
+  "name": "ttlcache",
+  "version": "0.0.0",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "description": "Time based cache",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbezhan/ttlcache"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "tap",
+    "snap": "tap",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --folow-tags"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "tap": "^16.3.7"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
